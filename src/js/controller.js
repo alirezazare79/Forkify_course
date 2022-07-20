@@ -70,6 +70,10 @@ const controlSearchResult = async function() {
 }
 controlSearchResult();
 
+
+const newFunc = function() {
+    console.log("Welcome to application");
+}
 const init = function() {
     bookmarkView.addHandlerRender(controllBookmarks);
     recipeView.addHandlerRender(controlRecipe);
@@ -78,6 +82,7 @@ const init = function() {
     searchView.addHandlerSearch(controlSearchResult);
     paginationView.addHandlerClick(controlPagination);
     addReciepView.addHandlerUpload(controllAddRecipe);
+    newFunc();
 
 }
 
